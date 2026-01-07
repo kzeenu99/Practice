@@ -56,4 +56,9 @@ Once successful, you’ll see this message in Jenkins logs:
 Your website will be available at:
 
 👉 http://<your-server-ip>
+<<<<<<< HEAD
 >>>>>>> 97adb3f (Update README.md)
+=======
+
+
+>>>>>>> e4e1c4f (Update README.md)
