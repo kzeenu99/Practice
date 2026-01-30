@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('cloning the code') {
             steps {
-                git branch: 'main', url: 'https://github.com/Raja4123/Sample-website.git'
+                git branch: 'main', url: 'https://github.com/kzeenu99/Practice.git'
             }
         }
         stage('copy the code to nginx') {
