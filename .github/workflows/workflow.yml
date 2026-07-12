@@ -26,6 +26,6 @@ jobs:
       - name: Build Docker image
         run:  docker build -t hello-maven .
       - name: Tag Docker image
-        run: docker tag hello-maven:latest ${{ secrets.DOCKER_USERNAME }}/hello-maven-latest
+        run: docker tag hello-maven:latest ${{ secrets.DOCKER_USERNAME }}/hello-maven:latest
       - name: Push image
         run:  docker push ${{ secrets.DOCKER_USERNAME }}/hello-maven:latest
