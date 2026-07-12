@@ -27,5 +27,7 @@ jobs:
         run:  docker build -t hello-maven:latest .
       - name: Tag Docker image
         run: docker tag hello-maven:latest ${{ secrets.DOCKER_USERNAME }}/sample-hello-maven:latest
+      - name: Test application
+        run: java -jar target/HelloMaven-1.0-SNAPSHOT.jar
       - name: Push image
         run:  docker push ${{ secrets.DOCKER_USERNAME }}/sample-hello-maven:latest
