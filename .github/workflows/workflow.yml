@@ -1,4 +1,4 @@
-name: newflow.yml
+name: Newflow.yml
 on:
    push:
      branches:
